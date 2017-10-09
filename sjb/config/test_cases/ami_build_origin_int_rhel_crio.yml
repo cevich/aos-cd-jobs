@@ -27,8 +27,6 @@ extensions:
       script: |-
         sudo mkdir /go
         sudo chmod a+rwx /go
-        sudo chmod o+rw /etc/environment
-        sudo echo "GOPATH=/go" >> /etc/environment
         mkdir -p /go/src/github.com/kubernetes-incubator
         cd /go/src/github.com/kubernetes-incubator
         git clone https://github.com/kubernetes-incubator/cri-o.git
